@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+#game-board {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+}
+
+#game-board > h1 {
+  margin-bottom: 20px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(220, 225, 240, 1);
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+  margin: 7px;
+  cursor: pointer;
+  transform: scale(1);
+  box-shadow: 3px 3px 3px #000;
+  text-align: center;
+  font-size: 30px;
+}
+
+.square:hover {
+  background-color: rgba(220, 225, 240, 0.5);
+}
+
+.square:active {
+  transform: scale(0.97);
+}
+
+.restart-btn {
+  border-radius: 3px;
+  padding: 3px 15px;
+  margin-top: 10px;
+}
+
+.player {
+  margin-top: 10px;
+}
+
+.winner {
+  margin-top: 10px;
+}
