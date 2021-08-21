@@ -5,6 +5,12 @@
   font-family: Roboto;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
 #game-board {
   display: flex;
   flex-direction: column;
@@ -12,10 +18,17 @@
   align-items: center;
   justify-content: center;
   height: 600px;
+  width: 600px;
 }
 
 #game-board > h1 {
   margin-bottom: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  width: 330px;
+  text-align: center;
 }
 .row {
   display: flex;
@@ -38,24 +51,44 @@
   font-size: 30px;
 }
 
-.square:hover {
+.selected:hover {
   background-color: rgba(220, 225, 240, 0.5);
 }
 
-.square:active {
+.selected:active {
   transform: scale(0.97);
 }
 
 .restart-btn {
   border-radius: 3px;
   padding: 3px 15px;
-  margin-top: 10px;
+  margin-top: 20px;
+  color: #e13615;
+  background-color: black;
+  font-weight: bold;
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .player {
   margin-top: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  width: 330px;
+  text-align: center;
 }
 
 .winner {
   margin-top: 10px;
+  color: white;
+  background-color: #e13615;
+  border-radius: 5px;
+  padding: 10px;
+  width: 330px;
+  text-align: center;
+  display: none;
 }
